@@ -10,4 +10,30 @@
     height: 100vh;
     background: black;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+} 
+
+.sec .box{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #222;
+}
+
+.animate{
+    animation: animate 2s linear forwards;
+}
+
+@keyframes animate{
+    0%{
+        background: transparent;
+    }
+    50%{
+        background: #0f0;
+    }
+    100%{
+        background: transparent;
+    }
 }
